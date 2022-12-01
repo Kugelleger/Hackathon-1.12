@@ -43,7 +43,9 @@ public class App {
     public static void essbar(boolean Wert){
         
         for(Tiere tier : getTier()){
-            tier.setEssbar(Wert);
+            if(tier.isEssbar()){
+                tier.setEssbar(Wert);
+            }
         }        
     }
 
